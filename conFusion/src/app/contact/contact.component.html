@@ -52,7 +52,7 @@
       </p>
       <p>
         <mat-form-field class="half-width">
-          <input matInput formControlName="telnum" placeholder="Tel. Number" type="tel">
+          <input matInput formControlName="telnum" placeholder="Tel. Number" type="tel" pattern="[0-9]*" >
           <mat-error *ngIf="formErrors.telnum">{{formErrors.telnum}}</mat-error>
         </mat-form-field>
         <mat-form-field class="half-width">
