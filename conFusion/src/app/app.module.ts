@@ -31,6 +31,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MatSliderModule} from '@angular/material/slider'; 
+import { HttpClientModule,HttpClient } from '@angular/common/http';
+import {baseURL} from './shared/baseurl';
+import{ ProcessHTTPMsgService} from './services/process-httpmsg.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,12 +65,11 @@ import {MatSliderModule} from '@angular/material/slider';
     MatSlideToggleModule,
     ReactiveFormsModule,
     MatProgressSpinnerModule,
-    MatSliderModule
+    MatSliderModule,
+    HttpClientModule
   ],
   providers: [
     StyleUtils,
-    DishService,
-    LeaderService,
     StylesheetMap,
     MediaMarshaller,
     ɵMatchMedia,
@@ -78,11 +80,19 @@ import {MatSliderModule} from '@angular/material/slider';
     FlexStyleBuilder,
     ShowHideStyleBuilder,
     FlexOrderStyleBuilder,
-    LayoutAlignStyleBuilder, PromotionService
+    LayoutAlignStyleBuilder, 
+    PromotionService,
+    DishService,
+    LeaderService,
+    ProcessHTTPMsgService,
+    HttpClientModule,
+    {provide: 'BaseURL', useValue:baseURL}
   ],
   entryComponents: [
     LoginComponent
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}
