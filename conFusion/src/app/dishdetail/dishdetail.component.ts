@@ -14,7 +14,7 @@ import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
 })
 export class DishdetailComponent implements OnInit {
 
-  @ViewChild('fform', { static: true }) commentFormDirective;
+  @ViewChild('fform', { static: true }) feedbackFormDirective;
   dish: Dish;
   dishIds: string[];
   prev: string;
@@ -123,7 +123,7 @@ export class DishdetailComponent implements OnInit {
       rating: '5',
     });
    
-    this.commentFormDirective.resetForm();
+    this.feedbackFormDirective.resetForm();
 
   }
 }
