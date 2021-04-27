@@ -3,7 +3,7 @@ import{ FormBuilder, Validators,FormGroup} from '@angular/forms';
 import {Feedback,ContactType} from '../shared/feedback';
 import { Options } from 'selenium-webdriver/firefox';
 import {   flyInOut,expand} from '../animations/app.animation';
-
+import { FeedbackService } from '../services/feedback.service';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -49,7 +49,11 @@ export class ContactComponent implements OnInit {
       'email':         'Email not in valid format.'
     },
   };
-  constructor(private fb : FormBuilder) { 
+  feedbackErrMess : string ='';
+  feedbackResDisplay: Feedback;
+  displayFeedback= false;
+  contactErrMess: any;
+  constructor(private fb : FormBuilder,private FeedbackService: FeedbackService ) { 
     this.createForm();
   }
 
@@ -74,6 +78,18 @@ export class ContactComponent implements OnInit {
   onSubmit(){
     this.feedback = this.feedbackForm.value;
     console.log(this.feedback);
+    this.displayFeedback = true;
+    this.FeedbackService.submitFeedback(this.feedback)
+    .subscribe(feedbackRes => {
+      this.feedback = feedbackRes; 
+      this.feedbackResDisplay = feedbackRes;
+      this.displayInterval()
+    },
+      (errMess) => { 
+        this.feedback = null; 
+        this.feedbackResDisplay = null; 
+        this.contactErrMess = <any>errMess; });
+    
     this.feedbackForm.reset({
       firstname: '',
       lastname: '',
@@ -86,6 +102,14 @@ export class ContactComponent implements OnInit {
     this.feedbackFormDirective.resetForm();
 
   }
+displayInterval(){
+  setTimeout(() => {
+    this.feedbackResDisplay = null;
+    this.displayFeedback = false
+  }, 5000);
+
+}
+  
   onValueChanged(data?: any) {
     if (!this.feedbackForm) { return; }
     const form = this.feedbackForm;
