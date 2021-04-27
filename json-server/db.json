@@ -39,6 +39,36 @@
           "comment": "It's your birthday, we're gonna party!",
           "author": "25 Cent",
           "date": "2011-12-02T17:57:28.556094Z"
+        },
+        {
+          "comment": "This is great!",
+          "rating": 4,
+          "author": "Akhilesh",
+          "date": "2021-04-17T11:00:54.142Z"
+        },
+        {
+          "comment": "not great",
+          "rating": 2,
+          "author": "sai",
+          "date": "2021-04-17T11:04:30.471Z"
+        },
+        {
+          "comment": "good",
+          "rating": "5",
+          "author": "Appala",
+          "date": "2021-04-17T11:06:50.505Z"
+        },
+        {
+          "comment": "nice",
+          "rating": "5",
+          "author": "lakk",
+          "date": "2021-04-17T11:07:27.232Z"
+        },
+        {
+          "comment": "good taste",
+          "rating": 4,
+          "author": "sai ",
+          "date": "2021-04-17T11:13:36.889Z"
         }
       ]
     },
