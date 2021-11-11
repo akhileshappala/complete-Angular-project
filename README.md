@@ -1,6 +1,6 @@
-#Angular project - convering all concepts
+#Angular project - Below concepts are covered
 
-This project was build on Angular, covering all the concepts of angular framework
+This project was build on Angular, covering the concepts of angular framework
 
 Concepts covered : 
 <ul>
@@ -17,4 +17,6 @@ Concepts covered :
 <li>Angular and HTTP </li>
 <li>Animation and Directives</li>
 <li>Testing Angular Applications </li>
+ 
+  <li> will be adding morerelated to testing (mocking)</li>
 </ul>
