@@ -3,7 +3,7 @@
 This project was build on Angular, covering the concepts of angular framework
 
 Concepts covered : 
-<ul>
+<ol>
 <li>Components architecture </li>
 <li>Data Binding </li>
 <li>Angular services & Dependency Injectionn</li>
@@ -19,4 +19,6 @@ Concepts covered :
 <li>Testing Angular Applications </li>
  
   <li> will be adding morerelated to testing (mocking)</li>
-</ul>
+</ol>
+
+
