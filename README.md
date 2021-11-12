@@ -22,3 +22,7 @@ Concepts covered :
 </ol>
 
 
+Contents to be updated:
+1. Initial project --> can be found at Initial folder
+2. Data Binding : 
+    Add below code in .ts file  
