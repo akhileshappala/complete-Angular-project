@@ -4,24 +4,23 @@ This project was build on Angular, covering the concepts of angular framework
 
 Concepts covered : 
 
-<ol>
-<li>[Prerequisites](#prerequisites)</li>
-<li>[Components architecture](#components-and-architecture)</li>
-<li>[Initializing project](#initializing-project)</li>
-<li>[Data Binding]() </li>
-<li>Angular services & Dependency Injection</li>
-<li>Angular Routing</li>
-<li>Single page applications</li>
-<li>Angular Template-driven Forms</li>
-<li>Angular Reactive Forms</li>
-<li>Angular and Promise </li>
-<li>Angular and RxJS, Reactive programming</li>
-<li>Client-Server Communication</li>
-<li>Angular and HTTP </li>
-<li>Animation and Directives</li>
-<li>Testing Angular Applications </li>
+- [Prerequisites](#prerequisites)
+-[Components architecture](#components-and-architecture)
+-[Initializing project](#initializing-project)
+-[Data Binding](Data Binding)
+-[Angular services & Dependency Injection](Angular services) 
+-Angular Routing  
+-Single page applications  
+-Angular Template-driven Forms  
+-Angular Reactive Forms  
+-Angular and Promise   
+-Angular and RxJS, Reactive programming  
+-Client-Server Communication  
+-Angular and HTTP   
+-Animation and Directives  
+-Testing Angular Applications   
  
-  <li> will be adding morerelated to testing (mocking)</li>
+  - will be adding morerelated to testing (mocking)  
 </ol>
 
 
@@ -63,6 +62,7 @@ Note : Use _sudo_ on a Mac and Linux
 > npm install --save @angular/flex-layout@6.0.0-beta.18
 
 ### Components and Architecture
+	
 Below are the components used in the project. Each component has been explained along with its features and position to understand easily. 
 1.  about --> Router link to the about button in header
 2. contact --> Router link to the contact button in header
@@ -74,6 +74,7 @@ Below are the components used in the project. Each component has been explained 
 8. menu --> Router link to the about button in header. This contains 4 items which are dishes (each item is from dish-details component)
 
 ### Data Binding
+	
 - All over the project this feature has been used to display the data like names and details regarding dishes in several pages like home, about, menu, contact.
 - Used for  communication between the components 
 -  Check child parent communication so that you will get an insight using @input and @output
@@ -83,7 +84,8 @@ below is one of the particular instance for data binding
 
 > Used _Data bindingto update the Angular application to enable you to select any dish from the menu and show its details
 
-### Angular services & Dependency Injection
+### Angular services
+	
 Below are the services and their use cases in the application.
 dish.service --> To get the  details for a dish with respect to their id's
 feedback.service -->To add a feedback/ comment to a separate dish which will be available under menu if we select one dish
