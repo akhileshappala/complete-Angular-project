@@ -3,12 +3,12 @@
 This project was build on Angular, covering the concepts of angular framework
 
 Concepts covered : 
-[Prerequisites](#prerequisites)
-	- [Anchor links](#anchor-links)
+
 <ol>
-  [Components architecture](# Components and Architecture)
-<li>Components architecture </li>
-<li>Data Binding </li>
+<li>[Prerequisites](#prerequisites)</li>
+<li>[Components architecture](#components-and-architecture)</li>
+<li>[Initializing project](#initializing-project)</li>
+<li>[Data Binding]() </li>
 <li>Angular services & Dependency Injection</li>
 <li>Angular Routing</li>
 <li>Single page applications</li>
@@ -40,7 +40,7 @@ Note : Use _sudo_ on a Mac and Linux
    
    
 
-## Anchor links
+### Initializing project
 1. At a convenient location on your computer, create a folder named _Angular_ and move into that folder.
   
 
