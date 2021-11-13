@@ -4,6 +4,7 @@ This project was build on Angular, covering the concepts of angular framework
 
 Concepts covered : 
 <ol>
+  [Components architecture](### Components and Architecture)
 <li>Components architecture </li>
 <li>Data Binding </li>
 <li>Angular services & Dependency Injection</li>
