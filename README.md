@@ -48,7 +48,7 @@ Note : Use _sudo_ on a Mac and Linux
 7. Open another terminal and move to json-server folder and run the below command to run the json-server using db.json. So that data will be available to the application for client-server communication.
 > json-server --watch db.json -d 2000
 > 
-Note : Refer more for [Client-Server communication](client-server-communication)
+Note : Refer more for [Client-Server communication](#client-server-communication)
 ### Components and Architecture
 	
 Below are the components used in the project. Each component has been explained along with its features and position to understand easily. 
@@ -104,7 +104,7 @@ promotion.service --> To get the list of promotions or featured promotions in th
 - Handled promises in several components for example in menu component get dishes which is being handled using '.then'
 - Used setTimeout for promises to simulate time delay to show the response. example in dish.service.ts
 
-### RxJS concepts : 
+### RxJS concepts
 	
 Used sevaral RxJs concepts using import of library  like `of`, `delay`,`Observable`, `switchMap`,`throwError` .
 Will provide the reference so that we can check the real time scenario for the usage.
