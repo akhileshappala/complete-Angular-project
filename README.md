@@ -4,24 +4,19 @@ This project was build on Angular, covering the concepts of angular framework
 
 Concepts covered : 
 
-- [Prerequisites](#prerequisites)
--[Components architecture](#components-and-architecture)
--[Initializing project](#initializing-project)
--[Data Binding](Data Binding)
--[Angular services & Dependency Injection](Angular services) 
--Angular Routing  
--Single page applications  
--Angular Template-driven Forms  
--Angular Reactive Forms  
--Angular and Promise   
--Angular and RxJS, Reactive programming  
--Client-Server Communication  
--Angular and HTTP   
--Animation and Directives  
--Testing Angular Applications   
+1. [Prerequisites](#prerequisites)
+2. [Components architecture](#components-and-architecture)
+3. [Initializing project](#initializing-project)
+4. [Data Binding](Data Binding)
+5. [Angular services & Dependency Injection](Angular services) 
+6. [Angular Routing](angular-routing)
+7. [Angular template drive Forms](angular-template-drive-forms)
+8. [RxJS concepts](rxjs-concepts)
+9. [Client-Server communication](client-server-communication)
+10. [Http Client](http-client)
+11. [Animations and Directives](animations-and-directives)
+
  
-  - will be adding morerelated to testing (mocking)  
-</ol>
 
 
 ### Prerequisites
@@ -61,6 +56,7 @@ Note : Use _sudo_ on a Mac and Linux
 
 > npm install --save @angular/flex-layout@6.0.0-beta.18
 
+	
 ### Components and Architecture
 	
 Below are the components used in the project. Each component has been explained along with its features and position to understand easily. 
@@ -94,6 +90,7 @@ process-httpmsg.service --> To return the error message for each of the api call
 promotion.service --> To get the list of promotions or featured promotions in the home page .
 
  ### Angular Routing
+	
  The initial point for routing starts with 
   `<router-outlet></router-outlet>`
   The routing concept has been used throughout application for several buttons  in the navbar like menu, home.
@@ -102,7 +99,9 @@ promotion.service --> To get the list of promotions or featured promotions in th
   - You can use `routerLink="/contactus"` for buttons.
   - To make it active i.e to hightlight the current button according to page, we use `routerLinkActive="active" `
   - We can send id for other components using router params like  `[routerLink]="['/dishdetail', dish.id]` which is being used in menu component.
-   ### Angular template drive Forms:
+   
+### Angular template drive Forms:
+	
    - Added material forms, in the login component. 
    - You can check the `<form>` tag code in the login component, which is being 
    - There is a basic validation in the login component. which is being added.
@@ -114,6 +113,7 @@ promotion.service --> To get the list of promotions or featured promotions in th
 - Used setTimeout for promises to simulate time delay to show the response. example in dish.service.ts
 
 ### RxJS concepts : 
+	
 Used sevaral RxJs concepts using import of library  like `of`, `delay`,`Observable`, `switchMap`,`throwError` .
 Will provide the reference so that we can check the real time scenario for the usage.
 
@@ -130,6 +130,7 @@ return  of(DISHES.filter((dish) => (dish.id === id))[0]).pipe(delay(2000)).toPro
 - Check the services how ProcessHTTPMsgService is being used to handle the error messages coming from the api's
 
 ### Client-Server communication
+	
 - Set up a simple server that makes data available for clients
  -   Access the data from the server using a browser.
 -   Use the json-server as a simple static web server.
@@ -144,6 +145,7 @@ http://localhost:3000/leaders
 http://localhost:3000/feedback
 
 ### Http Client
+	
 -   Use Angular HTTP client to obtain data from a server
 -   Process the HTTP response from the server to retrieve the data and use it in your application.
 >import { HttpClient } from  '@angular/common/http';
@@ -157,6 +159,7 @@ Changed the service by using the http instead of using `of`
 - Used the `HttpErrorResponse` for error handling in process-httpmsg.service.ts
 
 ### Animations and Directives
+	
 - In highlight.directive.ts you are able to see two functions which named onMouseEnter and onMouseLeave.
 - On using the core modules, we are able to highlight the element based on the css which is being there in styles.scss with name  .highlight 
 - Custom animations are being added , You can check more animations in component decorator in .ts files of components for example in dishdetail.component.ts.
