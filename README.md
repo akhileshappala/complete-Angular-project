@@ -1,3 +1,4 @@
+
 #Angular project - Below concepts are covered
 
 This project was build on Angular, covering the concepts of angular framework
@@ -36,27 +37,18 @@ Note : Use _sudo_ on a Mac and Linux
 
 ### Initializing project
 1. At a convenient location on your computer, create a folder named _Angular_ and move into that folder.
-  
-
->  ng new conFusion --style=scss
-
-  2. This should create a new folder named _conFusion_ within your _Angular_ folder and create the Angular application in that folder.
-  3. Move to the conFusion folder and type the following at the prompt:
-  
-> ng serve --open
-
-  4. To configure your project to use Angular material, type the following at the prompt to install Angular Material, Angular Animations and HammerJS:
-
-> npm install --save hammerjs@2.0.8
-
-5.   Next, include the following into the <head> of _index.html_ to make use of Material Design icons:
-
-    <link  href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
-6. Next, install Angular Flex Layout as follows:
-
-> npm install --save @angular/flex-layout@6.0.0-beta.18
-
-	
+2. Clone or Download this repo and open in any editor.
+3. Open terminal, Move to root folder named Confusion, where package.json is present. 
+4. Install the node_modules by running below comamnd.
+> npm install
+5. Build the project by runnning  below commaand 
+> ng build / npm run build
+6. To make the application up and running, run below command 
+> ng serve / npm run serve
+7. Open another terminal and move to json-server folder and run the below command to run the json-server using db.json. So that data will be available to the application for client-server communication.
+> json-server --watch db.json -d 2000
+> 
+Note : Refer more for [Client-Server communication](client-server-communication)
 ### Components and Architecture
 	
 Below are the components used in the project. Each component has been explained along with its features and position to understand easily. 
