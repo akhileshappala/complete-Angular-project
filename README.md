@@ -8,14 +8,14 @@ Concepts covered :
 1. [Prerequisites](#prerequisites)
 2. [Initializing project](#initializing-project)
 3. [Components architecture](#components-and-architecture)
-4. [Data Binding](data-binding)
-5. [Angular services & Dependency Injection](angular-services) 
-6. [Angular Routing](angular-routing)
-7. [Angular template drive Forms](angular-template-drive-forms)
-8. [RxJS concepts](rxjs-concepts)
-9. [Client-Server communication](client-server-communication)
-10. [Http Client](http-client)
-11. [Animations and Directives](animations-and-directives)
+4. [Data Binding](#data-binding)
+5. [Angular services & Dependency Injection](#angular-services) 
+6. [Angular Routing](#angular-routing)
+7. [Angular template drive Forms](#angular-template-drive-forms)
+8. [RxJS concepts](#rxjs-concepts)
+9. [Client-Server communication](#client-server-communication)
+10. [Http Client](#http-client)
+11. [Animations and Directives](#animations-and-directives)
 
  
 
