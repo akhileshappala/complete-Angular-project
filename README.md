@@ -5,8 +5,8 @@ This project was build on Angular, covering the concepts of angular framework
 Concepts covered : 
 
 1. [Prerequisites](#prerequisites)
-2. [Components architecture](#components-and-architecture)
-3. [Initializing project](#initializing-project)
+2. [Initializing project](#initializing-project)
+3. [Components architecture](#components-and-architecture)
 4. [Data Binding](data-binding)
 5. [Angular services & Dependency Injection](angular-services) 
 6. [Angular Routing](angular-routing)
