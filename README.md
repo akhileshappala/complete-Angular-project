@@ -1,6 +1,6 @@
 
 
-#Angular project - Below concepts are covered
+#Complete Angular project
 
 This project was build on Angular, covering the concepts of angular framework
 
